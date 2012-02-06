@@ -1,7 +1,8 @@
-/* Clear Style */
+/* @override http://upthemes.com/demo/simplecart/wp-content/themes/simplecart/admin/css/up_framework.css?ver=3.1 */
 
-.clear:after,
-.feature-set li:after{
+/* @group Clear Style */
+
+.clear:after{
 	content:".";
 	clear:both;
 	display:block;
@@ -9,19 +10,20 @@
 	visibility:hidden;
 }
 
-/* End Clear Style */
+/* @end */
 
-/* UpThemes Framework Main Styles */
+/* @group UpThemes Framework Main Styles */
 
 #upthemes_framework{
-	width: 780px;
+	width: auto;
 	margin: 20px;
 	margin-bottom: 80px;
 	font-family: Helvetica, "Helvetica Neue", Arial, Tahoma, sans-serif;
 }
 
-#upthemes_framework h2{
+#upthemes_framework #up_content h3{
 	font-size: 21px;
+	font-family: Helvetica, "Helvetica Neue", Arial, Tahoma, sans-serif;
 	letter-spacing: -0.02em;
 	color: #292929;
 	margin-top: 0;
@@ -53,7 +55,7 @@
 	border-bottom: 1px solid #eee;
 	height: 8px;
 	overflow: visible;
-	margin: 8px 9px 8px 18px;
+	margin: 16px 9px 16px 18px;
 }
 
 #upthemes_framework .divider span{
@@ -70,66 +72,120 @@
 	-moz-text-shadow: 0 1px 0 #fff;
 }
 
+#upthemes_framework .button,
 #upthemes_framework input[type="submit"],
-#upthemes_framework input[type="button"],
-#upthemes_framework button,
-#upthemes_framework .button{
-	font-family: Helvetica, "Helvetica Neue", Arial, Tahoma, sans-serif;
-	border-radius:40px;
-	-webkit-border-radius:40px;
-	-moz-border-radius:40px;
-	background: url("../images/btn_primary.jpg") repeat-x 0 0;
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.6);
-	border: 1px solid #7dc490;
-	color:#FFFFFF;
-	cursor:pointer;
-	font-size:1em;
-	font-weight:bold;
-	margin:5px 0;
-	padding:6px 26px !important;
-	box-shadow: 0 1px 1px rgba(255,255,255,0.4) inset;
-	-webkit-box-shadow: 0 1px 1px rgba(255,255,255,0.4) inset;
-	-moz-box-shadow: 0 1px 1px rgba(255,255,255,0.4) inset;
+#upthemes_framework button{
+	font-family: "lucida grande", sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #222;
+	background: #eee;
+	background: -moz-linear-gradient(0% 100% 90deg, #ccc, #f2f2f2);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#ccc));
+	border-top: 1px solid #888;
+	border-right: 1px solid #777;
+	border-bottom: 1px solid #707070;
+	border-left: 1px solid #777;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	border-radius: 16px;
+	box-shadow: 0 1px 2px 0 #a9a9a9;
+	-moz-box-shadow: 0 1px 2px 0 #a9a9a9;
+	-webkit-box-shadow: 0 1px 2px 0 #a9a9a9;
+	line-height: 1;
+	text-align: center;
+	text-shadow: 0 1px 1px #fff;
+	padding-top: 4px;
+	padding-right: 15px;
+	padding-bottom: 6px;
+	padding-left: 15px;
+	text-decoration: none;
+	display: inline-block;
 }
 
-#upthemes_framework input[type="submit"].secondary,
-#upthemes_framework input[type="button"].secondary,
-#upthemes_framework button.secondary,
-#upthemes_framework .secondary{
-	background: url("../images/btn_secondary.jpg") repeat-x 0 0;
-	border-color: #888;
-}
-
-#upthemes_framework .button{ padding: 2px 35px; }
-
+#upthemes_framework .button:hover,
 #upthemes_framework input[type="submit"]:hover,
-#upthemes_framework input[type="button"]:hover,
-#upthemes_framework button:hover,
-#upthemes_framework .button:hover {
-	background-position: 0 -33px;
-	border-color: #3bc552;
+#upthemes_framework button:hover{
+	color: #222;
+	background: #2a81d7;
+	background: -moz-linear-gradient(0% 100% 90deg, #c9c9c9, #f9f9f9);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+	from(#f9f9f9), to(#c9c9c9));
+	border-top: 1px solid #909090;
+	border-right: 1px solid #808080;
+	border-bottom: 1px solid #757575;
+	border-left: 1px solid #808080;
+	box-shadow: 0 1px 2px 0 #a9a9a9;
+	-moz-box-shadow: 0 1px 2px 0 #a9a9a9;
+	-webkit-box-shadow: 0 1px 2px 0 #a9a9a9;
+	cursor: pointer;
+	text-shadow: 0 1px 1px #fff;
+	text-decoration: none;
 }
 
-#upthemes_framework input[type="submit"].secondary:hover,
-#upthemes_framework input[type="button"].secondary:hover,
-#upthemes_framework button.secondary:hover,
-#upthemes_framework .secondary:hover{
-	border-color: #aaa;
-}
-
+#upthemes_framework .button:active,
 #upthemes_framework input[type="submit"]:active,
-#upthemes_framework input[type="button"]:active,
-#upthemes_framework button:active,
-#upthemes_framework .button:active {
-	background-position: 0 -66px;
-	border-color: #339443;
+#upthemes_framework button:active{
+	color: #222;
+	color: rgba(0,0,0,0.6);
+	background: -moz-linear-gradient(0% 100% 90deg, #aaa, #ccc);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+	from(#aaa), to(#ccc));
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	cursor: pointer;
+	text-shadow: none;
+	text-decoration: none;
 }
 
-#upthemes_framework input[type="submit"].secondary:active,
-#upthemes_framework input[type="button"].secondary:active,
-#upthemes_framework button.secondary:active,
-#upthemes_framework .secondary:active{
-	border-color: #555;
+#upthemes_framework .save,
+#upthemes_framework input[type="submit"].primary,
+#upthemes_framework button.save{
+	color: #fff;
+	background: #3b88d8;
+	background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#52a8e8), to(#377ad0));
+	border-top-color: #4081af;
+	border-right-color: #2e69a3;
+	border-bottom-color: #20559a;
+	border-left-color: #2e69a3;
+	box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), 0 1px 2px 0 #b3b3b3;
+	-moz-box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), 0 1px 2px 0 #b3b3b3;
+	-webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), 0 1px 2px 0 #b3b3b3;
+	text-shadow: 0 -1px 1px #3275bc;
+}
+
+#upthemes_framework .save:hover,
+#upthemes_framework input[type="submit"].primary:hover,
+#upthemes_framework button.save:hover{
+	color: #fff;
+	background: #2a81d7;
+	background: -moz-linear-gradient(0% 100% 90deg, #206bcb, #3e9ee5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+	from(#3e9ee5), to(#206bcb));
+	border-top: 1px solid #2a73a6;
+	border-right: 1px solid #165899;
+	border-bottom: 1px solid #07428f;
+	border-left: 1px solid #165899;
+	box-shadow: 0 1px 2px 0 #b3b3b3;
+	-moz-box-shadow: 0 1px 2px 0 #b3b3b3;
+	-webkit-box-shadow: 0 1px 2px 0 #b3b3b3;
+	cursor: pointer;
+	text-shadow: 0 -1px 1px #1d62ab;
+}
+
+#upthemes_framework .save:active,
+#upthemes_framework input[type="submit"]:active,
+#upthemes_framework button.save:active{
+	color: #fff;
+	color: rgba(255,255,255,0.6);
+	background: #206bcb;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	cursor: pointer;
+	text-shadow: 0 -1px 1px #1d62ab;
 }
 
 #upthemes_framework input[type="text"], 
@@ -148,6 +204,10 @@
 	margin-right: 10px;
 }
 
+#upthemes_framework a.button{
+	display: inline-block;
+}
+
 #upthemes_framework select{
 	padding:5px;
 	min-height:30px;
@@ -159,30 +219,23 @@
 
 #upthemes_framework input.selected{color:#1a1a1a !important;}
 
-/* End UpThemes Main Styles */
+#upthemes_framework .checkbox-container{padding:0 0 0 20px;}
+#upthemes_framework .checkbox{margin:0 0 5px;}
+#upthemes_framework .checkbox label{font-size:12px; font-weight:normal; margin:0 3px 0 0;}
 
-/* UpThemes Header Styles */
 
-.polish{
-	box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-	border: 1px solid #d4d4d4;
-	border-bottom: 0;
-	padding: 20px 20px 0 20px;
-	height: 36px;
-	text-align: right;
-}
+#upthemes_framework .radio-container{padding:0 0 0 20px;}
+#upthemes_framework .radio{margin:0 0 5px;}
+#upthemes_framework .radio label{font-size:12px; font-weight:normal; margin:0 3px 0 0;}
+
+/* @end */
+
+/* @group UpThemes Header Styles */
 
 #upthemes_framework #up_header{
-	border-radius-topleft: 4px;
-	border-radius-topright: 4px;
-	-moz-border-radius-topleft: 4px;
-	-moz-border-radius-topright: 4px;
-	-webkit-border-top-left-radius: 4px;
-	-webkit-border-top-right-radius: 4px;
-	height: 92px;
-	background: #dfdfdf url("../images/upfw_header_bg.jpg") repeat-x top left;
+	overflow: auto;
+	padding: 0 0 20px;
+	clear: both;
 }
 
 #upthemes_framework #up_header #up_logo{
@@ -190,28 +243,25 @@
 	padding: 0;
 }
 
-#upthemes_framework #up_header #up_logo a{
-	text-align: left;
-	overflow: hidden;
-	text-indent: -9999px;
-	width: 310px;
-	height: 40px;
-	display: block;
-	margin-top: 10px;
-	float: left;
-	background: url("../images/upfw_header_logo.png") no-repeat top left;
+#upthemes_framework #up_header #icon-upfw{
+	background: url("../images/upfw_ico_upthemes.png") no-repeat center center;
 }
 
 #upthemes_framework #up_header #up_topnav{
-	margin: -10px auto 0 0;
+	margin: 0;
 	padding: 0;
-	width: 200px;
+	top: 8px;
+	position: relative;
+	text-align: right;
 	float: right;
-	text-align: left;
+	width: auto;
 }
 
 #upthemes_framework #up_header #up_topnav li{
 	margin: 0;
+	display: inline;
+	display: inline-block;
+	margin-right: 15px;
 }
 
 #upthemes_framework #up_header #up_topnav a{
@@ -224,21 +274,6 @@
 	font-size: 0.9em;
 	color: #464646;
 	padding-left: 26px;
-}
-
-#upthemes_framework #up_header #up_topnav li:first-child{
-	border-top: 0;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-#upthemes_framework #up_header #up_topnav li{
-	border-top: 1px solid rgba(255,255,255,0.5);
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-#upthemes_framework #up_header #up_topnav li:last-child{
-	border-top: 1px solid rgba(255,255,255,0.5);
-	border-bottom: 0;
 }
 
 #upthemes_framework #up_header #up_topnav a{
@@ -279,43 +314,86 @@
 }
 
 #upthemes_framework .button-zone-wrapper{
-	background-color: #eee;
-	box-shadow: 0 -10px 30px rgba(0,0,0,0.1) inset;
-	-moz-box-shadow: 0 -10px 30px rgba(0,0,0,0.1) inset;
-	-webkit-box-shadow: 0 -10px 30px rgba(0,0,0,0.1) inset;
-	height: 58px;
+	clear: both;
+	height: auto;
+	background: #f1f1f1;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
+	border: 1px solid #e3e3e3;
 }
 
-#upthemes_framework #button-zone{
-	background-color: #eee;
-	box-shadow: 0 -10px 30px rgba(0,0,0,0.1) inset;
-	-moz-box-shadow: 0 -10px 30px rgba(0,0,0,0.1) inset;
-	-webkit-box-shadow: 0 -10px 30px rgba(0,0,0,0.1) inset;
-	border-bottom: 1px solid #ccc;
-	padding: 6px 20px 14px;
+#upthemes_framework .zone-top{
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+}
+
+#upthemes_framework .zone-bottom{
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+#upthemes_framework .button-zone{
+	padding: 10px;
 	z-index: 9999;
+	line-height: 1em;
+	text-align: right;
 }
 
 #upthemes_framework .formState{
 	display: none;
 	text-align: left;
 	float: left;
-	color: #eee;
+	color: #796e30;
 	font-weight: bold;
-	font-size: 0.9em;
-	line-height: 40px;
-	margin-left: 20px;
+	font-size: 1em;
+	line-height: 29px;
+	margin-left: 5px;
+}
+
+.formChanged{
+	-webkit-animation: formChanged 1.5s infinite;
+	background-color: #ffea74;
+}
+
+@-webkit-keyframes formChanged{
+	0%{
+		background-color: #fff5bd;
+		color: #bcab4c;
+	}
+	50%{
+		background-color: #ffea74;
+		color: #222;
+	}
+	100%{
+		background-color: #fff5bd;
+		color: #bcab4c;
+	}
 }
 
 #upthemes_framework .save-me-fool{
-	box-shadow: 0 0 8px rgba(122, 187, 242, 0.4);
-	-moz-box-shadow: 0 0 8px rgba(122, 187, 242, 0.4);
-	-webkit-box-shadow: 0 0 8px rgba(122, 187, 242, 0.4);
 }
 
-/* End UpThemes Header Styles */
+/* @end */
 
-/* UpThemes Main Area Styles */
+/* @group UpThemes Main Area Styles */
 
 #upthemes_framework #up_main{
 	box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
@@ -327,9 +405,14 @@
 	-moz-border-radius-bottomright: 4px;
 	-webkit-border-bottom-left-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
-	border: 1px solid #d4d4d4;
+	border: 1px solid #e3e3e3;
 	border-top: 0;
 	background: #fff url("../images/upfw_sidebar_bg.jpg") repeat-y top left;
+}
+
+#upthemes_framework #up_main,
+#upthemes_framework .button-zone-wrapper{
+	min-width: 830px;
 }
 
 #upthemes_framework #up_main #up_sidebar{
@@ -351,11 +434,14 @@
 	background-color: #eaeaea;
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #ccc;
-	box-shadow: -4px -4px 12px rgba(0,0,0,0.1) inset;	
-	-moz-box-shadow: -4px -4px 12px rgba(0,0,0,0.1) inset;	
-	-webkit-box-shadow: -4px -4px 12px rgba(0,0,0,0.1) inset;	
 	margin: 0;
 }
+
+#upthemes_framework #up_main #up_sidebar li a,
+#upthemes_framework #up_main #up_sidebar li.general-settings a{
+	background: url("../images/upfw_ico_settings.png") no-repeat 9px 10px;
+}
+
 
 #upthemes_framework #up_main #up_sidebar li.colors-and-images a{
 	background: url("../images/upfw_ico_images.png") no-repeat 8px 9px;
@@ -369,8 +455,9 @@
 	background: url("../images/upfw_ico_ads.png") no-repeat 8px 8px;
 }
 
-#upthemes_framework #up_main #up_sidebar li.general-settings a{
-	background: url("../images/upfw_ico_settings.png") no-repeat 9px 10px;
+#upthemes_framework #up_main #up_sidebar li.fonts a,
+#upthemes_framework #up_main #up_sidebar li.typography a{
+	background: url("../images/upfw_ico_fonts.png") no-repeat 8px 11px;
 }
 
 #upthemes_framework #up_main #up_sidebar li.import-export a{
@@ -396,7 +483,9 @@
 
 #upthemes_framework #up_main #up_content{
 	padding: 20px;
-	margin-left: 170px;
+	margin-left: 0;
+	float: left;
+	width: 630px;
 }
 
 #upthemes_framework #tabber, 
@@ -411,12 +500,19 @@
 
 #upthemes_framework fieldset{
 	width: 50%;
+	max-width: 50%;
 	float: left;
+	position: relative;
 }
 
-/* End UpThemes Main Area Styles */
+#upthemes_framework fieldset.title{
+	width: 45%;
+	margin-right: 5%;
+}
 
-/* Colorpicker Styles */
+/* @end */
+
+/* @group Colorpicker Styles */
 
 .colorPickerWrapper{
 	position: relative;
@@ -425,25 +521,20 @@
 
 .popup-guy{
 	position: absolute;
-	right: -50px;
-	top: -86px;
+	left: 40px;
+	top: 40px;
 	background-color: white;
-	border: 2px solid rgba(0,0,0,0.3);
-	border-radius: 120px;
-	-moz-border-radius: 120px;
-	-webkit-border-radius: 120px;
-	-khtml-border-radius: 120px;
-	
+	border: 1px solid #222;
+	padding: 5px;
 }
 
 .uploadify{
 	text-align: center;
 }
 
-/* End Colorpicker Styles */
+/* @end */
 
-
-/* UpThemes Footer Styles */
+/* @group UpThemes Footer Styles */
 
 #upthemes_framework #up_footer{
 	margin-top: 15px;
@@ -475,13 +566,13 @@
 	color: #222;
 }
 
-/* End UpThemes Footer Styles */
+/* @end */
 
-/* UpThemes Upload Styles <---Start Brian Fegter Edits */
+/* @group UpThemes Upload Styles */
 
 #upthemes_framework .preview{
 	float:left;
-	margin:20px 0 0;
+	margin:0 0 10px 0;
 }
 
 #upthemes_framework .preview img, #upthemes_framework .default img {
@@ -493,28 +584,81 @@
 
 #upthemes_framework .default{
 	text-align:center;
-	margin:15px 0 0;
+	margin:0 0 10px 0;
 	border-top:1px solid #e5e5e5;
 	color:#9e9e9e;
 }
 
 #upthemes_framework .viewgallery {
 	text-align:center;
-	margin:15px 0 0;
+	margin:5px 0 0;
 }
 
-#upthemes_framework .status {
+#upthemes_framework .uploadify {
+	position: relative;
+}
+
+#upthemes_framework .hide{
+	display: none;
+}
+
+#upthemes_framework .title .inner{
+	margin-bottom: 10px;
+}
+
+#upthemes_framework .loader {
+	background:url("../images/loader.gif") no-repeat scroll 0 0 transparent;
 	display:block;
+	height:16px;
+	position:absolute;
+	right:0;
 	text-align:center;
+	text-indent:-9000px;
+	top:8px;
+	width:16px;
+	display: none;
 }
 
-#upthemes_framework .status p{
-	
+#upthemes_framework .activeload {
+	display: block;
 }
 
 #upthemes_framework .allimages {
 	display:none;
 	margin:10px 0 0;
+}
+
+#upthemes_framework .default{
+	clear: both;
+}
+
+#upthemes_framework img{
+	background-color: #f5f5f5;
+}
+
+#upthemes_framework a.clear img{
+	background-color: transparent;
+}
+
+#upthemes_framework .allimages .preview img{
+	max-width: 50px;
+	-ms-interpolation-mode: bicubic;
+	margin-right: 10px;
+}
+
+#upthemes_framework fieldset{
+	position: relative;
+}
+
+#upthemes_framework fieldset a.clear{
+	display: inline-block;
+	margin-left: 0;
+	float: left;
+	margin-top: 4px;
+}
+
+#upthemes_framework	.thumbs{
+	padding-bottom: 0;
 }
 
 #upthemes_framework .uploaderror {
@@ -536,14 +680,10 @@
 	box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
 	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
 	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset;
-	border-radius-bottomleft: 4px;
-	border-radius-bottomright: 4px;
-	-moz-border-radius-bottomleft: 4px;
-	-moz-border-radius-bottomright: 4px;
-	-webkit-border-bottom-left-radius: 4px;
-	-webkit-border-bottom-right-radius: 4px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
 	border: 1px solid #d4d4d4;
-	border-top: 0;
 	background: #fff;
 }
 
@@ -583,6 +723,7 @@
 	text-align:center;
 	font-weight:bold;
 }
+
 #upthemes_framework p.import span{
 	display:block;
 	font-style:italic;
@@ -590,14 +731,16 @@
 	font-weight:normal;
 }
 
-#upthemes_framework .popup-colorpicker{
-	border: none !important;
+#upthemes_framework input[type="text"].popup-colorpicker{
+	border: none;
+	width: 80%;
+	margin-right: 34px;
 }
 
 #upthemes_framework .sticky{
 	position: fixed;
 	top: 0;
-	width: 738px;
+	width: 754px;
 }
 
 #upthemes_framework input.up_restore{
@@ -625,5 +768,243 @@
 	right:5px;
 }
 
-#upthemes_framework input.text_list{
+/* @end */
+
+/* @group Layout Engine Styles */
+
+#upthemes_framework .up-layout-container{
+	margin:0 0 0 20px; 
+	clear:both;
 }
+
+#upthemes_framework a.up-layout{
+	position:relative; 
+	display:inline-block; 
+	border:10px solid #EFEFEF; 
+	margin:0 10px 10px 0; 
+	border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	height:93px;
+} 
+
+#upthemes_framework a.up-layout:hover{
+	border-color:#A2DAEC;
+}
+
+#upthemes_framework a.up-layout-active{
+	border-color:#A2DAEC;
+}
+
+#upthemes_framework a.up-layout img{
+	margin:3px; 
+	height:87px; 
+	width:auto;
+}
+
+#upthemes_framework a.up-layout span{
+	display:none; 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	font-family:Georgia, serif; 
+	color:#848484;
+}
+
+#upthemes_framework a.up-layout:hover span{
+	display:block; 
+	width:100%; 
+	height:100%; 
+	text-align:center;
+	background:url(../images/upfw_white_bg.png) repeat; 
+	overflow:hidden;
+}
+
+#upthemes_framework a.up-layout em{
+	margin:40px 5px 0; 
+	text-align:center; 
+	display:block; 
+	font-style:normal;
+}
+
+/* @end */
+
+/* @group Style Engine Options */
+
+#upthemes_framework .up-style-container{
+	margin:0 0 0 20px;
+}
+
+#upthemes_framework a.up-style{
+	position:relative; 
+	display:inline-block;
+	border:10px solid #EFEFEF; 
+	margin:0 10px 10px 0; 
+	border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	height:93px;
+}
+
+#upthemes_framework a.up-style:hover{
+	border-color:#A2DAEC;
+}
+
+#upthemes_framework a.up-style-active{
+	border-color:#A2DAEC;
+}
+
+#upthemes_framework a.up-style img{
+	margin:3px; 
+	height:87px; 
+	width:auto;
+}
+
+#upthemes_framework a.up-style span{
+	display:none; 
+	position:absolute; 
+	top:0;
+	left:0; 
+	font-family:Georgia, serif; color:#848484;
+}
+
+#upthemes_framework a.up-style:hover span{
+	display:block;
+	width:100%; 
+	height:100%; 
+	text-align:center; 
+	background:url(../images/upfw_white_bg.png) repeat; 
+	overflow:hidden;
+}
+
+#upthemes_framework a.up-style em{
+	margin:40px 5px 0; 
+	text-align:center; 
+	display:block; 
+	font-style:normal;
+}
+
+/* @end */
+
+/* @group Typography Engine Options */
+
+#upthemes_framework li.typography{
+	position: relative;
+}
+
+#upthemes_framework li.typography .type_fields label{
+	font-size: 0.9em;
+}
+
+#upthemes_framework li.typography .type_fields select{
+	width: 250px;
+	float: none;
+	margin-bottom: 5px;
+}
+
+#upthemes_framework li.typography .type_preview{
+	padding: 20px 0;
+	width: 540px;
+	overflow: hidden;
+}
+
+#upthemes_framework li.typography select{
+	width: 140px;
+}
+
+#upthemes_framework li.compact{ border: none !important; margin: 0 0 10px 0 !important; padding: 0 !important; }
+
+#upthemes_framework li.compact *{ display: none; }
+#upthemes_framework li .compact_font_preview{ display: none; }
+
+#upthemes_framework li.compact:hover .selector,
+#upthemes_framework li.compact .type_title{ display: block; }
+#upthemes_framework li.compact:hover .type_title{ display: none; }
+
+#upthemes_framework li .toggle{ display: none; position: absolute; top: 36%; right: 18px; }
+#upthemes_framework li.compact:hover .toggle,
+#upthemes_framework li .toggle{ display: inline; }
+#upthemes_framework li .toggle{ top: 18px; }
+#upthemes_framework li.compact .compact_font_preview{ 
+	display: block !important; 
+	border: 1px solid #ccc;
+	cursor: pointer;
+	border-radius: 6px; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	padding: 15px; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1em !important;
+	white-space: nowrap;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+}
+
+#upthemes_framework #font-preview{
+	display: block; 
+	width: auto; 
+	right: 0; 
+	height:auto; 
+	padding:20px;
+	margin:10px 0; 
+	border: 2px dashed #ccc; 
+	border-radius: 3px; 
+	overflow:hidden; 
+}
+
+#upthemes_framework .font-slider{
+	width:250px;
+	margin:5px 0;
+}
+
+#upthemes_framework label span{
+	font-weight:normal;
+}
+
+#upthemes_framework .font-preview-label{
+	display:block;
+	margin:10px 0 0;
+}
+
+#upthemes_framework .field{ 
+	margin-bottom: 10px;
+}
+
+#upthemes_framework .font-selector{
+	width: 250px !important; 
+	float: none !important;
+}
+
+#upthemes_framework .font-label{
+	display:block;
+	margin:0 0 5px;
+}
+
+#upthemes_framework .typography fieldset.title,
+#upthemes_framework .typography fieldset.data{
+	width: 100%;
+	max-width: 100%;
+}
+
+#upthemes_framework .typography fieldset fieldset{
+	width: 50%;
+	max-width: 50%;
+	float: left;
+}
+
+#upthemes_framework .save_typekit_key{
+	display: inline-block;
+	width: auto;
+	clear: both;
+	margin-top: 8px;
+	margin-left: 22px;
+}
+
+/* @end */

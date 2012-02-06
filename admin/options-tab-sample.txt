@@ -40,7 +40,7 @@ $options = array (
             "id" => "logo",
             "type" => "image",
             "value" => "Upload Your Logo",
-            "url" => get_bloginfo('stylesheet_directory')."/images/dark/logo-trans.png"
+            "url" => get_bloginfo('template_directory')."/images/dark/logo-trans.png"
     )
 );
 

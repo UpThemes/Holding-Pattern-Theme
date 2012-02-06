@@ -1,7 +1,7 @@
 <?php
 
 // Add UpThemes Framework
-require_once('admin/functions.php');
+require_once('admin/admin.php');
 
 function get_custom_styles(){
 
