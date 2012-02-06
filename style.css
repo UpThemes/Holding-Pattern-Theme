@@ -1,0 +1,247 @@
+/*
+THEME NAME: Holding Pattern
+THEME URI: http://upthemes.com/2010/03/holding-pattern/
+DESCRIPTION: Park your domain in style with WordPress and Google FeedBurner.
+VERSION: 1.1
+AUTHOR: Chris Wallace for <a href="http://upthemes.com">UpThemes</a>
+AUTHOR URI: http://upthemes.com
+*/
+
+/* -------------------------------------------------------------- 
+  
+   Reset default browser CSS.
+   
+   Based on work by Eric Meyer:
+   * meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+   
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body { 
+  line-height: 1.5; 
+  background: #fff; 
+  margin:0; 
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+a img { border: none; }
+
+/* -------------------------------------------------------------- 
+  
+   Structure   
+   
+-------------------------------------------------------------- */
+
+body {
+	color:#121212;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: table;
+	font: 14px/180% Georgia, "Georgia MS", Times, "Times New Roman", serif;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration:none;
+}
+em {
+	font-style:italic;
+}
+strong {
+	font-weight:bold;
+}
+body{
+
+}
+a{
+	color: #6D9B9F;
+	text-decoration: none;
+}
+a:hover{
+	color: #67C7CF;
+	text-decoration: none;
+}
+p{
+	margin-bottom: 1em;
+}
+h1{
+	font-weight: normal;
+	font-size: 1.8em;
+	line-height: 1.3em;
+}
+input[type="text"], input[type="password"], textarea {
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-shadow: 0 2px 3px #ccc inset;
+	-moz-box-shadow: 0 2px 3px #ccc inset;
+	-webkit-box-shadow: 0 2px 3px #ccc inset;
+	border-color:#AAAAAA #CCCCCC #DDDDDD;
+	border-style:solid;
+	border-width:1px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:1.6em;
+	padding:6px;
+	background-color: #f1ecea;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.button{
+	border-radius:40px;
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+	background: #C2E4E6;
+	text-shadow: 0 1px 1px rgba(255,255,255,1.0);
+	-moz-text-shadow: 0 1px 1px rgba(255,255,255,1.0);
+	-webkit-text-shadow: 0 1px 1px rgba(255,255,255,1.0);
+	border: 1px solid #8FBDBF;
+	color: #103D3F;
+	cursor:pointer;
+	font-size:12px;
+	font-weight:bold;
+	margin:5px 0;
+	padding:8px 26px 6px !important;
+	text-transform:uppercase;
+	box-shadow: 0 1px 1px rgba(255,255,255,0.4) inset;
+	-webkit-box-shadow: 0 1px 1px rgba(255,255,255,0.4) inset;
+	-moz-box-shadow: 0 1px 1px rgba(255,255,255,0.4) inset;
+	font-family: Helvetica, "Helvetica Neue", Arial, Tahoma, sans-serif;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+	background-color: #C2EDEF;
+	border-color: #8FBDBF;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+	background-color: #8FBDBF;
+	border-color: #8FBDBF;
+}
+#wrapper{
+	min-height: 469px;
+	margin: 0;
+	padding: 0;
+}
+#logo img{
+	display: block;
+	margin: 0 auto 20px;
+}
+#content{
+	padding-top: 80px;
+}
+.awesome_wrapper{
+	background-color: rgba(0,0,0,0.4);
+	padding: 10px;
+	width: 740px;
+	margin: 0 auto;
+}
+.awesome{
+	text-align: center;
+	background-color: white;
+	padding: 40px;
+}
+.divider{
+	margin-bottom: 1em;
+}
+.footer{
+	margin: 0 auto;
+	width: 740px;
+	padding: 10px;
+	color: white;
+	color: rgba(255,255,255,0.5);
+	font: 0.9em Helvetica, "Helvetica Neue", Arial, Tahoma, sans-serif;
+	text-align: center;
+}
+.footer a{
+	color: #6F5F4C;
+}
+.home h1{
+	margin: 0 auto 20px auto;
+	overflow: hidden;
+}
+.four04 h1{
+	height: 128px;
+	width: 492px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-indent: -9000px;
+	background: url("images/404_heading.jpg") no-repeat top center;
+}
+
+/* =Images
+-------------------------------------------------------------- */
+
+/*  Only added for the sake of compliance with Themes Directory   */
+
+.entry-content img { margin: 0 0 18px 0; max-width:100%; }
+
+img.alignleft,img.align-left {
+	float: left;
+	margin-right:20px;
+}
+img.alignright,img.align-right {
+	display: block;
+	float: right;
+	margin-left:20px;
+}
+img.center, img.centered {
+	margin: 0 auto;
+	display: block;
+	float: none;
+	clear: both;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.wp-smiley { /* Prevent the smileys from breaking line-height */
+	max-height:12px;
+}
+
+
+
+
+
+
+
+
+
