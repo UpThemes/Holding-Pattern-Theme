@@ -60,7 +60,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	position: fixed;
+	/*position: fixed;*/
 	display: table;
 	font: 14px/180% Georgia, "Georgia MS", Times, "Times New Roman", serif;
 	margin: 0;
