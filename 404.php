@@ -61,37 +61,42 @@ get_header();
 	
 		<div id="content">
 	
-			<a id="logo" href="<?php bloginfo('wpurl'); ?>"><img src="
+			<a id="logo" href="<?php echo home_url(); ?>"><img src="
 			<?php
 					if($up_options->logo):
 						echo $up_options->logo;
 					endif;
-			?>" alt="<?php bloginfo('name'); ?>" />
+			?>" alt="<?php esc_attr( bloginfo( 'name' ) ); ?>" />
 			</a>
 				
 			<div class="awesome_wrapper">
 			
 				<div class="awesome">
 					
-					<h1><?php _e('Page not found. <span>We think it may have been <strong>murdered</strong>'); ?>.</span></h1>
+					<h1><?php _e( 'Page not found. <span>We think it may have been <strong>murdered</strong>', 'holding-pattern' ); ?>.</span></h1>
 					
 					<p>
-						<img src="<?php bloginfo('template_url'); ?>/clue/suspect/<?php echo $suspects[rand(1,6)]['img'] ?>" alt="<?php echo $suspects[rand(1,6)]['name'] ?>" width="150" height="240"> &nbsp; 
-						<img src="<?php bloginfo('template_url'); ?>/clue/location/<?php echo $locations[rand(1,9)]['img'] ?>" alt="<?php echo $locations[rand(1,9)]['name'] ?>" width="150" height="240"> &nbsp;     
-						<img src="<?php bloginfo('template_url'); ?>/clue/weapon/<?php echo $weapons[rand(1,6)]['img'] ?>" alt="<?php echo $weapons[rand(1,6)]['name'] ?>" width="150" height="240">
+						<img src="<?php echo get_template_directory_uri(); ?>/clue/suspect/<?php echo $suspects[rand(1,6)]['img'] ?>" alt="<?php echo $suspects[rand(1,6)]['name'] ?>" width="150" height="240"> &nbsp; 
+						<img src="<?php echo get_template_directory_uri(); ?>/clue/location/<?php echo $locations[rand(1,9)]['img'] ?>" alt="<?php echo $locations[rand(1,9)]['name'] ?>" width="150" height="240"> &nbsp;     
+						<img src="<?php echo get_template_directory_uri(); ?>/clue/weapon/<?php echo $weapons[rand(1,6)]['img'] ?>" alt="<?php echo $weapons[rand(1,6)]['name'] ?>" width="150" height="240">
 					</p>
 					
 					<p>
-						<a class="button" href="<?php bloginfo('wpurl'); ?>"><?php _e('&laquo; Return to Homepage'); ?></a>
+						<a class="button" href="<?php echo home_url(); ?>"><?php _e('&laquo; Return to Homepage', 'holding-pattern' ); ?></a>
 					</p>
 					
-			    </div>
+			    </div><!-- .awesome -->
 		    
-		    </div>
+		    </div><!-- .awesome_wrapper -->
+		    
+		    <?php if( $up_options->footer_text ){ ?>
+		    <div class="footer"><?php echo $up_options->footer_text; ?></div>
+		   	<?php } ?>
 	    
-	    </div>
+	    </div><!-- #content -->
     
-	</div>
+	</div><!-- #wrapper -->
 
+<?php wp_footer(); ?>
 </body>
 </html>
